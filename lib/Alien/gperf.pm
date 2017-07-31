@@ -20,7 +20,7 @@ Alien::gperf - Perl distribution for GNU gperf
     use Alien::gperf;
     use Env qw( @PATH );
 
-    unshift @ENV, Alien::gperf->bin_dir;
+    unshift @PATH, Alien::gperf->bin_dir;
     system gperf, '--version';
 
 =head1 DESCRIPTION
